@@ -75,5 +75,15 @@ this를 명시적으로 바인딩할 수 있는 Function.prototype.apply, Functi
    apply, call, bind 메서드는 Function.prototype의 메서드다.<br>
    즉, 이들 메서드는 모든 함수가 상속받아 사용할 수 있다.
 
+**apply, call 메서드**
+
 - apply와 call 메서드의 본직적인 기능은 함수를 호출하는 것
+  apply와 call 메서드는 함수를 호출하면서 첫 번째 인수로 전달한 특정 객체를 호출한 함수의 this에 바인딩
   <br>
+- apply 메서드 : 호출할 함수의 인수를 배열로 묶어 전달
+- call 메서드 : 호출할 함수의 인수를 쉼표로 구분한 리스트 형식으로 전달
+  <br>
+  <br>
+  **bind 메서드**
+- bind 메서드는 apply, call 메서드와 달리 함수를 호출하지 않는다. 첫 번째 인수로 전달한 값으로 this 바인딩이 교체된 함수를 새롭게 생성해 반환
+- bind 메서드는 메서드의 this와 메서드 내부의 중첩 함수 or 콜백 함수의 this가 불일치하는 문제를 해결하기 위해 사용<br>
